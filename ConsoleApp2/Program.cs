@@ -1,0 +1,24 @@
+﻿using ConsoleApp2.Concrete;
+User Student1 = new StudentUser("Tunahan", "Yildiz", "11122233344", 50.0);
+User Employee1 = new EmployeeUser("Yıldıray", "Duran", "31313131313", 70.0);
+User RetiredUser1 = new RetiredUser("Osman", "Durmaz", "13245679811", 30.0);
+
+Console.WriteLine("-----------------");
+Student1.write();
+Student1.pay();
+Student1.write();
+Student1.load(5);
+Student1.write();
+Console.WriteLine("-----------------");
+Employee1.write();
+Employee1.pay();
+Employee1.write();
+Employee1.load(15);
+Employee1.write();
+Console.WriteLine("-----------------");
+RetiredUser1.write();
+RetiredUser1.pay();
+RetiredUser1.write();
+RetiredUser1.load(10);
+RetiredUser1.write();
+Console.WriteLine("-----------------");
